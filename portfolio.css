@@ -1,0 +1,33 @@
+#naivbar{
+    background-color: rgba(0, 0, 0, 0.703);
+    color: white;
+    display: flex;
+    align-items: center;
+    
+} 
+#naivbar div{
+    
+    width: 50%;
+    justify-content: center;
+    
+}
+#naivbar>:first-child{
+    text-align: center;
+}
+#naivbar div a{
+text-decoration: none;
+color: white;
+font-weight: bold;
+margin: 10px;
+font-size: 18px;
+}
+
+#Home{
+    background-color: blue;
+    height: 500px;
+}
+
+#About{
+    background-color: rgb(32, 201, 38);
+    height: 500px;
+}
