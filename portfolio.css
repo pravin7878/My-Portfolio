@@ -43,15 +43,7 @@
 
 }
 
-#Home {
-    /* background-color: blue; */
-    height: 500px;
-}
 
-#About {
-    /* background-color: rgb(201, 32, 32); */
-    height: 500px;
-}
  /*
 
 /* @media only screen and (max-width: 600px) and (min-width: 400px) {...} */
@@ -91,6 +83,64 @@
     #naivbar h1 {
         font-size: 28px;
         margin: 7px;
+    }
+}
+
+
+
+#Home {
+    display: flex;
+    justify-content: space-between;
+    border: solid 2px red;
+     margin-top: 23px;
+     padding-top: 30px;
+     background-image: url(./Image/backgraund-3.jpg);
+   height: 100vh;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-position: center center;
+}
+#Home div{
+    width: 70%;
+   color: white;
+   text-align: center;
+   align-items: center;
+   border :solid 1px green;
+   padding-top: 70px;
+   font-size: 36px;
+}
+#Home > :first-child{
+    width: 30%;
+}
+#Home div h1{
+    color: red;
+}
+#Home div h1,h4{
+    margin: 13px;
+    text-shadow: 2px 2px 8px #0b0b0b;
+}
+#Home div button{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    padding: 7px 18px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-color:2px solid white;
+}
+
+#Home div button:hover{
+    background-color: rgba(255, 0, 0, 0.495);
+}
+#About {
+    /* background-color: rgb(201, 32, 32); */
+    height: 500px;
+}
+@media screen and (max-width:960) and (min-width:700) {
+    #Home{
+        
     }
 }
  
