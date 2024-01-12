@@ -1,33 +1,96 @@
-#naivbar{
-    background-color: rgba(0, 0, 0, 0.703);
-    color: white;
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#naivbar {
+    background-color: black;
     display: flex;
+    width: 100%;
     align-items: center;
-    
-} 
-#naivbar div{
-    
+    position: fixed;
+    top: 0;
+}
+
+#naivbar h1 {
+    color: red;
+    font-size: 40px;
+    margin: 10px;
+    text-shadow: 2px 2px 8px #0b0b0b;
+}
+
+#naivbar div {
     width: 50%;
     justify-content: center;
-    
 }
-#naivbar>:first-child{
+
+#naivbar>:first-child {
     text-align: center;
 }
-#naivbar div a{
-text-decoration: none;
-color: white;
-font-weight: bold;
-margin: 10px;
-font-size: 18px;
+
+#naivbar div a {
+    text-decoration: none;
+    /* color: rgb(255, 255, 255); */
+    color: #FFFFFF;
+    font-weight: 700;
+    margin: 10px;
+    font-size: 18px;
 }
 
-#Home{
-    background-color: blue;
+#naivbar div a:hover {
+    color: red;
+    font-size: 19px;
+    margin: 8px;
+
+}
+
+#Home {
+    /* background-color: blue; */
     height: 500px;
 }
 
-#About{
-    background-color: rgb(201, 32, 32);
+#About {
+    /* background-color: rgb(201, 32, 32); */
     height: 500px;
 }
+ /*
+
+/* @media only screen and (max-width: 600px) and (min-width: 400px) {...} */
+
+ @media only screen and (max-width:1060px) and
+(min-width:750px) {
+    #naivbar div a:hover {
+        font-size: 13px;
+        margin: 6px;
+    }
+
+    #naivbar div a {
+        font-weight: 400;
+        margin: 8px;
+        font-size: 12px;
+    }
+
+    #naivbar h1 {
+        font-size: 35px;
+        margin: 10px;
+    }
+}
+ 
+@media only screen and (max-width:749px) and
+(min-width:580px) {
+    #naivbar div a:hover {
+        font-size: 8px;
+        margin: 8px;
+    }
+
+    #naivbar div a {
+        font-weight: 400;
+        margin: 8px;
+        font-size: 8px;
+    }
+
+    #naivbar h1 {
+        font-size: 28px;
+        margin: 7px;
+    }
+}
+ 
