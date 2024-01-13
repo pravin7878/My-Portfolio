@@ -1,10 +1,19 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
-
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    overflow-x: hidden;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
 #naivbar {
     background-color: black;
     display: flex;
+    justify-content: center;
     width: 100%;
     align-items: center;
     position: fixed;
@@ -19,32 +28,30 @@
 }
 
 #naivbar div {
-    width: 50%;
+    width: 48%;
     justify-content: center;
-    /* border: solid 2px rgb(9, 239, 9); */
+    border: solid 2px rgb(9, 239, 9);
 }
 
 #naivbar>:first-child {
     text-align: center;
 }
-#naivbar div ul{
+/* .dekstop-navbar-btn{
     display: flex;
-}
+    width: 100%;
+} */
 
 
-#naivbar div ul li a {
+#naivbar div a {
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 700;
     margin: 10px;
     font-size: 17px;
     align-items: center;
-    /* display: none; */
-    /* border: solid 2px blue; */
-    padding: 5px;
 }
 
-#naivbar div ul li a:hover {
+#naivbar div a:hover {
     color: red;
     font-size: 18px;
     margin: 8px;
@@ -63,13 +70,15 @@
 .mobile-nav-icon{
     color: white;
     font-size: 3rem;
-   /* border: solid 2px yellow; */
-   
-
+   border: solid 2px yellow;
+   cursor: pointer;
 }
- /*
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+  }
 
-/* @media only screen and (max-width: 600px) and (min-width: 400px) {...} */
+
+ /* @media only screen and (max-width: 600px) and (min-width: 400px) {...} */
 
  @media only screen and (max-width:1060px) and
 (min-width:750px) {
@@ -104,26 +113,73 @@
     }
 
     #naivbar h1 {
-        font-size: 28px;
+        font-size: 20px;
         margin: 7px;
     }
 }
 
-@media only screen and (max-width:580px) and
+@media only screen and (max-width:600px) and
 (min-width:320px) {
     .dekstop-navbar-btn{
         display: none;
-    }
+        /* width: 100%;
+    height: 100vh;
+    background:red;
+    position: absolute;
+    top: 44px ;
+    left: 100px; 
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    */
+    } 
     .mobile-navbar-btn{
         display: block;
+        /* z-index: 999; */
         text-align: end;
-        padding-right: 40px;
+        /* padding-right: 40px; */
     }
-
+    #naivbar{
+        /* position: relative; */
+    }
     #naivbar h1 {
-        font-size: 24px;
+        font-size: 20px;
         margin: 10px;
     }
+
+    .dekstop-navbar-btn{
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .active .dekstop-navbar-btn {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        width: 200%;
+      }
+
+      .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+        display: block;
+        text-align: end;
+      }
+     .active .dekstop-navbar-btn{
+        width: 20%;
+     }
+      .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+        display: none;
+      }
+
 }
 
 #Home {
@@ -180,5 +236,10 @@
     #Home{
         
     }
+}
+
+
+.mobilescreen{
+    background-color: black;
 }
  
