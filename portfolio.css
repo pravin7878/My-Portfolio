@@ -1,15 +1,16 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
+
 html {
     font-size: 62.5%;
-    /* 1rem = 10px */
     overflow-x: hidden;
-  }
-  
-  body {
+}
+
+body {
     overflow-x: hidden;
-  }
+}
+
 #naivbar {
     background-color: black;
     display: flex;
@@ -30,16 +31,11 @@ html {
 #naivbar div {
     width: 48%;
     justify-content: center;
-    border: solid 2px rgb(9, 239, 9);
 }
 
 #naivbar>:first-child {
     text-align: center;
 }
-/* .dekstop-navbar-btn{
-    display: flex;
-    width: 100%;
-} */
 
 
 #naivbar div a {
@@ -58,30 +54,52 @@ html {
 
 }
 
-/* #naivbar :last-child{
-    width: 10%;
-} */
 
-.mobile-navbar-btn{
-    display: none;
-    text-align: end;
-    padding-right: 40px;
-}
-.mobile-nav-icon{
-    color: white;
-    font-size: 3rem;
-   border: solid 2px yellow;
-   cursor: pointer;
-}
-.mobile-nav-icon[name="close-outline"] {
+  .mobile-navbar-btn{
     display: none;
   }
 
+#open-menu {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
 
- /* @media only screen and (max-width: 600px) and (min-width: 400px) {...} */
+.open-menu-btn {
+    width: 60%;
+}
 
- @media only screen and (max-width:1060px) and
-(min-width:750px) {
+.close-menu-btn {
+    width: 80%;
+}
+
+
+
+.mobile-menu-div{
+    background-color: #0b0b0b;
+    position: absolute;
+    top: 48px;
+
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.mobile-menu-div a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+   margin-bottom: 20px;
+}
+
+/* @media only screen and (max-width: 600px) and (min-width: 400px) {...} */
+
+@media only screen and (max-width:1060px) and (min-width:750px) {
     #naivbar div a:hover {
         font-size: 13px;
         margin: 6px;
@@ -98,9 +116,8 @@ html {
         margin: 10px;
     }
 }
- 
-@media only screen and (max-width:749px) and
-(min-width:580px) {
+
+@media only screen and (max-width:749px) and (min-width:580px) {
     #naivbar div a:hover {
         font-size: 8px;
         margin: 8px;
@@ -116,51 +133,29 @@ html {
         font-size: 20px;
         margin: 7px;
     }
+
+    
 }
 
-@media only screen and (max-width:600px) and
-(min-width:320px) {
-    .dekstop-navbar-btn{
+@media only screen and (max-width:600px) and (min-width:320px) {
+    .dekstop-navbar-btn {
         display: none;
-        /* width: 100%;
-    height: 100vh;
-    background:red;
-    position: absolute;
-    top: 44px ;
-    left: 100px; 
-    
+    }
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    transform: translateX(100%);
-    transition: all 0.5s linear;
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    */
-    } 
-    .mobile-navbar-btn{
+    .mobile-navbar-btn {
         display: block;
-        /* z-index: 999; */
+        z-index: 999;
         text-align: end;
-        /* padding-right: 40px; */
+        padding-right: 40px;
     }
-    #naivbar{
-        /* position: relative; */
-    }
+
     #naivbar h1 {
         font-size: 20px;
         margin: 10px;
     }
 
-    .dekstop-navbar-btn{
-        flex-direction: column;
-        align-items: center;
-      }
-    
+
+    /*
       .active .dekstop-navbar-btn {
         transform: translateX(0);
         opacity: 1;
@@ -168,17 +163,7 @@ html {
         pointer-events: auto;
         width: 200%;
       }
-
-      .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
-        display: block;
-        text-align: end;
-      }
-     .active .dekstop-navbar-btn{
-        width: 20%;
-     }
-      .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
-        display: none;
-      }
+*/
 
 }
 
@@ -186,34 +171,49 @@ html {
     display: flex;
     justify-content: space-between;
     border: solid 2px red;
-     margin-top: 23px;
-     padding-top: 30px;
-     background-image: url(./Image/backgraund-3.jpg);
-   height: 100vh;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
+    margin-top: 23px;
+    padding-top: 30px;
+    background-image: url(./Image/backgraund-3.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 70px;
+    height: auto;
+    /* background-position: center center;
+    background-repeat: no-repeat; */
+    background-size: max(1200px, 100vw);
+    /* position: relative; */
+    /* resize: both;
+  overflow: scroll; */
+  transition: all .5s;
 }
-#Home div{
+
+#Home div {
     width: 70%;
-   color: white;
-   text-align: center;
-   align-items: center;
-   border :solid 1px green;
-   padding-top: 70px;
-   font-size: 36px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding-top: 100px;
+    font-size: 40px;
 }
-#Home > :first-child{
+
+#Home> :first-child {
     width: 30%;
 }
-#Home div h1{
+
+#Home div h1 {
     color: red;
+    font-size: 7rem;
 }
-#Home div h1,h4{
+
+#Home div h1,
+h4 {
     margin: 13px;
     text-shadow: 2px 2px 8px #0b0b0b;
 }
-#Home div button{
+
+#Home div button {
     font-size: 24px;
     font-weight: bold;
     background-color: red;
@@ -222,24 +222,64 @@ html {
     border-radius: 8px;
     margin-top: 20px;
     cursor: pointer;
-    border-color:2px solid white;
+    border-color: 2px solid white;
+    margin-bottom: 30px;
 }
 
-#Home div button:hover{
+#Home div button:hover {
     background-color: rgba(255, 0, 0, 0.495);
 }
-#About {
-    /* background-color: rgb(201, 32, 32); */
-    height: 500px;
+
+@media screen and (max-width:950px) and (min-width:720px) {
+    #Home div h1{
+        font-size: 5rem;
+    }
+    #Home div h4{
+        font-size: 3rem;
+    }
+    #home div button{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    
 }
-@media screen and (max-width:960) and (min-width:700) {
+
+@media  screen and (max-width:720px) and (min-width:320px) {
+
     #Home{
-        
+        height: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    
+    }
+    #Home div h1{
+        font-size: 3rem;
+    }
+    #Home div h4{
+        font-size: 1rem;
+    }
+    #Home div button{
+        font-size: 1.5rem;
     }
 }
 
-
-.mobilescreen{
-    background-color: black;
+@media  screen and (max-width:320) {
+    #Home div h1{
+        font-size: 2rem;
+    }
+    #Home div h4{
+        font-size: 0.6rem;
+    }
 }
- 
+#About {
+    background-color: rgb(201, 32, 32);
+    height: 800px;
+}
+#Skills{
+        background-color: rgb(67, 201, 23);
+        height: 800px;
+}
+
+
+
