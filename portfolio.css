@@ -21,29 +21,52 @@
 #naivbar div {
     width: 50%;
     justify-content: center;
+    /* border: solid 2px rgb(9, 239, 9); */
 }
 
 #naivbar>:first-child {
     text-align: center;
 }
+#naivbar div ul{
+    display: flex;
+}
 
-#naivbar div a {
+
+#naivbar div ul li a {
     text-decoration: none;
-    /* color: rgb(255, 255, 255); */
     color: #FFFFFF;
     font-weight: 700;
     margin: 10px;
-    font-size: 18px;
+    font-size: 17px;
+    align-items: center;
+    /* display: none; */
+    /* border: solid 2px blue; */
+    padding: 5px;
 }
 
-#naivbar div a:hover {
+#naivbar div ul li a:hover {
     color: red;
-    font-size: 19px;
+    font-size: 18px;
     margin: 8px;
 
 }
 
+/* #naivbar :last-child{
+    width: 10%;
+} */
 
+.mobile-navbar-btn{
+    display: none;
+    text-align: end;
+    padding-right: 40px;
+}
+.mobile-nav-icon{
+    color: white;
+    font-size: 3rem;
+   /* border: solid 2px yellow; */
+   
+
+}
  /*
 
 /* @media only screen and (max-width: 600px) and (min-width: 400px) {...} */
@@ -86,7 +109,22 @@
     }
 }
 
+@media only screen and (max-width:580px) and
+(min-width:320px) {
+    .dekstop-navbar-btn{
+        display: none;
+    }
+    .mobile-navbar-btn{
+        display: block;
+        text-align: end;
+        padding-right: 40px;
+    }
 
+    #naivbar h1 {
+        font-size: 24px;
+        margin: 10px;
+    }
+}
 
 #Home {
     display: flex;
@@ -97,7 +135,7 @@
      background-image: url(./Image/backgraund-3.jpg);
    height: 100vh;
    background-repeat: no-repeat;
-   background-size: 100%;
+   background-size: cover;
    background-position: center center;
 }
 #Home div{
