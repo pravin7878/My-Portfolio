@@ -43,21 +43,21 @@ OpenMenuBtn.addEventListener('click', () => {
 
 let project = [
   {
-    Img: "https://media.istockphoto.com/id/866156168/photo/nature-b1.jpg?s=612x612&w=is&k=20&c=9kNWvgcKCMLgcwE-XC1my6neVwBdwJOIciAwxg3jJno=",
+    Img: "./Image/netflix.png",
 
-    Title: "Netflix Clone",
+    Title: "Netflix-Clone",
 
     description: "Developed a Netflix Clone using HTML and CSS, focusing on responsiveness and incorporating features like image and video autoplay on the home screen.Currently, the clone primarily serves as a static representation without functional components.Proficiently utilized HTML5 and CSS3 to achieve the desired layout and styling " ,
 
-    techstack: " Tech Stack:- HTML | CSS",
+    techstack: "Tech Stack:- HTML | CSS",
     github:"google.com",
     DeployLink:""
   },
   {
-    Img: "https://media.istockphoto.com/id/866156168/photo/nature-b1.jpg?s=612x612&w=is&k=20&c=9kNWvgcKCMLgcwE-XC1my6neVwBdwJOIciAwxg3jJno=",
-    Title: "project 1",
-    description: "this is my project",
-    techstack: "html,css,js",
+    Img: "./Image/hellobrightline.png",
+    Title: "hellobrightline-Clone",
+    description: "Developed Hellobrightline-Clone in just 5 days.Replicated the Brightline website, a behavioral health solution for children and teens.What I Did:-Created a good-looking website that works on any device.Added images, videos, and text to make it visually appealing.Used HTML5 and CSS3 for the technical side.",
+    techstack: "Tech Stack:- HTML | CSS",
     github:"google.com",
     DeployLink:""
 
