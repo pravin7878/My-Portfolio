@@ -50,23 +50,21 @@ let project = [
     description: "Developed a Netflix Clone using HTML and CSS, focusing on responsiveness and incorporating features like image and video autoplay on the home screen.Currently, the clone primarily serves as a static representation without functional components.Proficiently utilized HTML5 and CSS3 to achieve the desired layout and styling " ,
 
     techstack: "Tech Stack:- HTML | CSS",
-    github:"google.com",
-    DeployLink:""
+    github:"https://github.com/pravin7878/Netflix-clone",
+    DeployLink:"https://netflix-clone-pk.netlify.app/"
   },
   {
     Img: "./Image/hellobrightline.png",
     Title: "hellobrightline-Clone",
     description: "Developed Hellobrightline-Clone in just 5 days.Replicated the Brightline website, a behavioral health solution for children and teens.What I Did:-Created a good-looking website that works on any device.Added images, videos, and text to make it visually appealing.Used HTML5 and CSS3 for the technical side.",
     techstack: "Tech Stack:- HTML | CSS",
-    github:"google.com",
-    DeployLink:""
+    github:"https://github.com/pravin7878/hellobrightline.clone",
+    DeployLink:"https://hellobrightline-clone-bypk.netlify.app/"
 
   }
 ]
 
 let projectSec = document.querySelector('#Project>div')
-// console.log(projectSec)
-
 
 let CreateprojectDiv = (data) => {
   let div = document.createElement('div')
@@ -79,22 +77,22 @@ let CreateprojectDiv = (data) => {
   let githubbtn = document.createElement('a')
   let liveLinkbtn = document.createElement('a')
   btndiv.append(githubbtn, liveLinkbtn)
-  // console.log(img);
+ 
 
   img.src = data.Img
   titel.textContent = data.Title
   description.textContent = data.description
   techstack.textContent = data.techstack
+  githubbtn.innerText = "Git Repo";
+  liveLinkbtn.innerText = "Live Link"
 githubbtn.setAttribute("href",data.github)
 liveLinkbtn.setAttribute("href",data.DeployLink)
-
+githubbtn.target="_blank"
+liveLinkbtn.target="_blank"
 
   div.append(img, titel, description, techstack, btndiv)
-  // return div
   projectSec.append(div)
 }
-
-
 
 
 let getdata = () => {
@@ -104,3 +102,6 @@ let getdata = () => {
   })
 }
 getdata()
+
+
+

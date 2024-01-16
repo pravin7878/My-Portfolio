@@ -409,6 +409,7 @@ h4 {
     margin-top: 30px;
     border: solid 1px red;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #Skills .skillcontaint>div>div:hover {
@@ -584,14 +585,11 @@ h4 {
     font-size: 30px;
     margin-bottom: 5px;
     color: white;
-
 }
 
 #Project>h2 {
     text-align: center;
     font-size: 25px;
-
-
 }
 
 #Project>div {
@@ -607,11 +605,123 @@ h4 {
     margin: 50px 0px;
     display: flex;
     flex-direction: column;
-    height: 400px;
-    border: solid 2px red;
+    border: solid 1px red;
     padding: 20px;
+    background-color: rgba(58, 56, 56, 0.45);
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 #Project>div>div>img {
     width: 100%;
+}
+#Project>div>div>h1,p,h4{
+    margin: 5px;
+}
+#Project>div>div>div{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+#Project>div>div>div>a{
+    font-size: 1.5rem;
+    width:35% ;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 12px;
+    border: solid 2px black;
+}
+
+
+/*<------------Responsive Code for Project Section------------> */
+@media  screen and (max-width:950px) and (min-width:720px) {
+    #Project>div>div>div>a{
+    font-size: 1rem;
+    }
+}
+
+@media  screen and (max-width:720px) and (min-width:320px) {
+    #Project>div>div>div>a{
+    font-size: 1rem;
+    }
+
+    #Project>div {
+        display: flex;
+        width: 60%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    flex-direction: column;
+    }
+
+    #Project>div>div {
+        width: 100%;
+        margin: 10px;
+    }
+    
+}
+@media  screen and (max-width:320px){
+    #Project>div>div>div>a{
+    font-size: 1rem;
+    }
+
+    #Project>div {
+        display: flex;
+        width: 60%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    flex-direction: column;
+    }
+
+    #Project>div>div {
+        width: 100%;
+        margin: 10px;
+    }
+    
+}
+
+#github>h1{
+margin: 2rem 0rem;
+text-align: center;
+font-size: 3rem;
+}
+
+#github>div{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-top: 3rem ;
+    margin-bottom: 3rem ;
+   
+}
+#github>div>div{
+    /* width: ;*/
+    /* border :solid 2px red ; */
+}
+
+#github>div>div>img{
+    width: 100%;
+}
+@media  screen and (max-width:720px) and (min-width:200px) {
+    #github>h1{
+        font-size: 1.5rem;
+    }
+}
+
+
+footer {
+    background: black;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
 }
