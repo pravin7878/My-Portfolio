@@ -302,7 +302,7 @@ h4 {
 #About>div>:first-child>div {
     border: solid 4px rgb(0, 0, 0);
     width: 50%;
-    border-radius:12px ;
+    border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -310,7 +310,8 @@ h4 {
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#About>div>:first-child{
+
+#About>div>:first-child {
     justify-content: center;
     align-items: center;
 }
@@ -322,35 +323,38 @@ h4 {
 
 /*<------------Responsive code for About Page Section------------> */
 
-@media  screen and (max-width:800px) and (min-width:600px) {
-    #About h1{
+@media screen and (max-width:800px) and (min-width:600px) {
+    #About h1 {
         font-size: 30px;
         width: 26%;
     }
 
-    #About>div>:first-child>div{
+    #About>div>:first-child>div {
         width: 80%;
     }
-    #About>div>div{
+
+    #About>div>div {
         font-size: 12px;
     }
 }
 
-@media  screen and (max-width:600px) and (min-width:200px) {
-    #About h1{
+@media screen and (max-width:600px) and (min-width:200px) {
+    #About h1 {
         font-size: 30px;
         width: 40%;
     }
 
-    #About>div>:first-child>div{
+    #About>div>:first-child>div {
         width: 80%;
     }
-    #About>div>div{
+
+    #About>div>div {
         width: 60%;
         font-size: 12px;
         padding: 0px;
     }
-    #About>div{
+
+    #About>div {
         flex-direction: column;
         align-items: center;
         gap: 30px;
@@ -361,8 +365,8 @@ h4 {
 /*<------------Skills Section Styling start------------> */
 
 
-#Skills {
-    background-color: rgba(0, 0, 0, 0.93);
+#Skills>.skillcontaint {
+    /* background-color: rgba(0, 0, 0, 0.93); */
     height: auto;
     color: #FFFFFF;
     display: flex;
@@ -370,7 +374,12 @@ h4 {
     flex-direction: column;
     padding: 30px 0px;
 }
-#Skills h1{
+
+.bgblack {
+    background-color: rgba(0, 0, 0, 0.93);
+}
+
+#Skills .skillcontaint h1 {
     text-align: center;
     /* justify-content: center; */
     font-size: 40px;
@@ -380,17 +389,19 @@ h4 {
     margin-top: 50px;
     margin-bottom: 70px;
 }
-#Skills>div{
+
+#Skills>.skillcontaint>div {
     width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 90px;
-    padding-bottom:20px ;
-    
+    padding-bottom: 20px;
+
 }
-#Skills>div>div{
+
+#Skills .skillcontaint>div>div {
     width: 13%;
     text-align: center;
     padding: 50px;
@@ -399,71 +410,208 @@ h4 {
     border: solid 1px red;
     border-radius: 10px;
 }
-#Skills>div>div:hover{
-border: solid 2px black;
-background-color: rgba(255, 0, 0, 0.352);
-transition: all 0.4s;
+
+#Skills .skillcontaint>div>div:hover {
+    border: solid 2px black;
+    background-color: rgba(255, 0, 0, 0.352);
+    transition: all 0.4s;
 }
-#Skills>div>div>div{
-width: 30%;
-margin: auto;
+
+#Skills .skillcontaint>div>div>div {
+    width: 30%;
+    margin: auto;
 
 }
-#Skills>div>div>div>img{
+
+#Skills .skillcontaint>div>div>div>img {
     width: 100%;
 }
-#Skills>div>:last-child>div{
+
+#Skills .skillcontaint>div>:last-child>div {
     background-color: #FFFFFF;
     border-radius: 15px;
 }
-#Skills>div>:last-child>div>img{
+
+#Skills .skillcontaint>div>:last-child>div>img {
     width: 80%;
     padding-left: 6px;
 }
 
+.bgwhite {
+    background-color: white;
+}
+
+#techstack>h1 {
+    color: #0b0b0b;
+    text-align: center;
+    font-size: 40px;
+    border-bottom: solid 6px red;
+    width: 20%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#techstack>div {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#techstack>div>div {
+    width: 23%;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 36px;
+    background-color: #FFFFFF;
+}
+
+#techstack>div>div img {
+    width: 100%;
+}
+
+#techstack>div>div>h1 {
+    font-size: 2rem;
+}
+
+#techstack>div>div>:first-child {
+    /* padding: 20px; */
+}
+
+#techstack>div>div:hover {
+    background-color: #0b0b0b;
+    color: white;
+    border-radius: 12px;
+}
+
 /*<------------Responsive code for Skills Page Section------------> */
 @media screen and (max-width:1024px) and (min-width:720px) {
-    #Skills>div>div{
+    #Skills>.skillcontaint>div>div {
         width: 14%;
         padding: 25px;
         margin-top: 0px;
     }
+
 }
 
 @media screen and (max-width:720px) and (min-width:420px) {
-    #Skills>div>div{
-         width: 70%;
-         padding: 20px;
-         margin-top: 0px;
+    #Skills>.skillcontaint>div>div {
+        width: 70%;
+        padding: 20px;
+        margin-top: 0px;
     }
 
-    #Skills>div{
+    #Skills>.skillcontaint>div {
         width: 80%;
         margin: auto;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-}
-@media screen and (max-width:420px) and (min-width:200px) {
-    #Skills>div>div{
-         width: 50%;
-         margin: auto;
-         /* padding: 20px; */
-         margin-top: 0px;
+
+    #Skills>#techstack>div {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
-    #Skills>div{
+    #Skills>#techstack>div>div {
+        width: 70%;
+        /* padding: 40px; */
+        margin-top: 0px;
+    }
+
+    #Skills>#techstack>h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:420px) and (min-width:200px) {
+    #Skills>.skillcontaint>div>div {
+        width: 50%;
+        margin: auto;
+        /* padding: 20px; */
+        margin-top: 0px;
+    }
+
+    #Skills>.skillcontaint>div {
         width: 70%;
         margin: auto;
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
         justify-content: center;
+    }
+
+    #Skills>#techstack>div>div {
+        width: 40%;
+        margin: auto;
+        /* padding: 20px; */
+        margin-top: 0px;
+    }
+
+    #Skills>#techstack>div {
+        width: 70%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 20px; */
+        justify-content: center;
+    }
+
+    #Skills>#techstack>h1 {
+        font-size: 20px;
     }
 }
 
 
 
+/*<------------Project Section Styling start------------> */
+
+#Project {
+    padding: 2rem 0px;
+    color: white;
+}
 
 
+#Project>h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: white;
+
+}
+
+#Project>h2 {
+    text-align: center;
+    font-size: 25px;
+
+
+}
+
+#Project>div {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-around;
+
+}
+
+#Project>div>div {
+    width: 35%;
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    border: solid 2px red;
+    padding: 20px;
+}
+
+#Project>div>div>img {
+    width: 100%;
+}
