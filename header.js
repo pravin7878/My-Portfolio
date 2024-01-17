@@ -1,4 +1,6 @@
-var menuDiv = document.querySelector('#menu')
+var menuDiv = document.querySelector('.dekstop-navbar-btn')
+var menuDivbtn = document.querySelectorAll('.dekstop-navbar-btn>a')
+console.log(menuDivbtn)
 let OpenMenuBtn = document.getElementById('open-menu')
 
 let btnIcon = document.querySelector('.btnicon')
@@ -8,20 +10,31 @@ const BtnImg = {
   closemenu: "./Image/icons8-close-window-50.png"
 }
 
+// menuDivbtn.addEventListener('click',()=>{
+//       menuDiv.style.display="none"
+//     })
 
-const creatMobilemenu = () => {
-  let output = ``
-  output += `
-<a href="#Home">Home</a>
-<a href="#About">About</a>
-<a href="#Skills">Skills</a>
-<a href="#Projects">Projects</a>
-<a href="#Contact">Contact Us</a>
-<a href="">Resume</a>
-`
-  menuDiv.innerHTML = output
+  // menuDiv.forEach((btn=>{
+  //   btn.addEventListener('click',()=>{
+  //     menuDiv.style.display="none"
+  //   })
+  
+  // }))
 
-}
+
+// const creatMobilemenu = () => {
+//   let output = ``
+//   output += `
+// <a href="#Home">Home</a>
+// <a href="#About">About</a>
+// <a href="#Skills">Skills</a>
+// <a href="#Projects">Projects</a>
+// <a href="#Contact">Contact Us</a>
+// <a href="">Resume</a>
+// `
+//   menuDiv.innerHTML = output
+
+// }
 
 
 
@@ -29,16 +42,35 @@ OpenMenuBtn.addEventListener('click', () => {
   if (OpenMenuBtn.className == "active") {
     OpenMenuBtn.innerHTML = `<img src='${BtnImg.closemenu}' alt=""  class= "close-menu-btn">`
     OpenMenuBtn.classList.toggle('active')
-    menuDiv.classList.toggle('mobile-menu-div')
-    creatMobilemenu()
+    // menuDiv.classList.toggle('mobile-menu-div')
+    // creatMobilemenu()
+// menuDiv.classList.toggle('showhide')
+menuDiv.style.display="flex"
   }
   else {
     OpenMenuBtn.innerHTML = `<img src="./Image/icons8-menu-50 (1).png" alt="open-menu" class= "open-menu-btn" >`
     OpenMenuBtn.classList.toggle('active')
-    menuDiv.innerHTML = '';
-    menuDiv.classList.toggle('mobile-menu-div')
+    // menuDiv.innerHTML = '';
+    // menuDiv.classList.toggle('mobile-menu-div')
+menuDiv.classList.toggle('showhide')
+menuDiv.style.display="none"
   }
 })
+
+
+let resume = document.querySelectorAll('#resumebtn')
+console.log(resume)
+resume.forEach((btn)=>{
+  btn.addEventListener('click',()=>{
+    {
+      console.log("resume");
+      window.open('https://drive.google.com/file/d/1RzyN94xTKCJyE3G0fVYd1xMsnhLqY0Ag/view?usp=sharing',"_blank" )
+    }
+  })
+})
+
+
+
 
 
 let project = [
@@ -97,7 +129,7 @@ liveLinkbtn.target="_blank"
 
 let getdata = () => {
   project.forEach((data) => {
-    console.log(data)
+    // console.log(data)
     CreateprojectDiv(data)
   })
 }

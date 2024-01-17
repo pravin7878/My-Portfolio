@@ -59,7 +59,6 @@ body {
 
 }
 
-
 .mobile-navbar-btn {
     display: none;
 }
@@ -143,8 +142,35 @@ body {
 }
 
 @media only screen and (max-width:600px) and (min-width:200px) {
+    /* .dekstop-navbar-btn {
+        display: none;
+    }
+
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 999;
+        text-align: end;
+        padding-right: 40px;
+    }
+
+    #naivbar h1 {
+        font-size: 20px;
+        margin: 10px;
+    } */
+    .showhide{
+        display: none;
+    } 
+
     .dekstop-navbar-btn {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        top: 40px;
+        right: 0px;
+        background-color: #0b0b0b;
+        width: 100vw;
+        height: 100vh;
     }
 
     .mobile-navbar-btn {
@@ -202,10 +228,11 @@ h4 {
     text-shadow: 2px 2px 8px #0b0b0b;
 }
 
-#Home div button {
+#Home div a {
     font-size: 24px;
     font-weight: bold;
     background-color: red;
+    text-decoration: none;
     color: white;
     padding: 7px 18px;
     border-radius: 8px;
@@ -215,7 +242,7 @@ h4 {
     margin-bottom: 30px;
 }
 
-#Home div button:hover {
+#Home div a:hover {
     background-color: rgba(255, 0, 0, 0.495);
 }
 
@@ -230,7 +257,7 @@ h4 {
         font-size: 3rem;
     }
 
-    #home div button {
+    #home div a {
         padding-bottom: 0px;
         margin-bottom: 0px;
     }
@@ -616,10 +643,14 @@ h4 {
 #Project>div>div>img {
     width: 100%;
 }
-#Project>div>div>h1,p,h4{
+
+#Project>div>div>h1,
+p,
+h4 {
     margin: 5px;
 }
-#Project>div>div>div{
+
+#Project>div>div>div {
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -627,9 +658,10 @@ h4 {
     margin: auto;
     margin-top: 2rem;
 }
-#Project>div>div>div>a{
+
+#Project>div>div>div>a {
     font-size: 1.5rem;
-    width:35% ;
+    width: 35%;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -641,15 +673,15 @@ h4 {
 
 
 /*<------------Responsive Code for Project Section------------> */
-@media  screen and (max-width:950px) and (min-width:720px) {
-    #Project>div>div>div>a{
-    font-size: 1rem;
+@media screen and (max-width:950px) and (min-width:720px) {
+    #Project>div>div>div>a {
+        font-size: 1rem;
     }
 }
 
-@media  screen and (max-width:720px) and (min-width:320px) {
-    #Project>div>div>div>a{
-    font-size: 1rem;
+@media screen and (max-width:720px) and (min-width:320px) {
+    #Project>div>div>div>a {
+        font-size: 1rem;
     }
 
     #Project>div {
@@ -658,18 +690,19 @@ h4 {
         margin: auto;
         justify-content: center;
         align-items: center;
-    flex-direction: column;
+        flex-direction: column;
     }
 
     #Project>div>div {
         width: 100%;
         margin: 10px;
     }
-    
+
 }
-@media  screen and (max-width:320px){
-    #Project>div>div>div>a{
-    font-size: 1rem;
+
+@media screen and (max-width:320px) {
+    #Project>div>div>div>a {
+        font-size: 1rem;
     }
 
     #Project>div {
@@ -678,46 +711,124 @@ h4 {
         margin: auto;
         justify-content: center;
         align-items: center;
-    flex-direction: column;
+        flex-direction: column;
     }
 
     #Project>div>div {
         width: 100%;
         margin: 10px;
     }
-    
+
 }
 
-#github>h1{
-margin: 2rem 0rem;
-text-align: center;
-font-size: 3rem;
+/*<------------github Page Section Styling Start-----------> */
+
+#github>h1 {
+    margin: 2rem 0rem;
+    text-align: center;
+    font-size: 3rem;
 }
 
-#github>div{
+#github>div {
     width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    margin-top: 3rem ;
-    margin-bottom: 3rem ;
-   
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
 }
-#github>div>div{
+
+#github>div>div {
     /* width: ;*/
     /* border :solid 2px red ; */
 }
 
-#github>div>div>img{
+#github>div>div>img {
     width: 100%;
 }
-@media  screen and (max-width:720px) and (min-width:200px) {
-    #github>h1{
+
+/*<------------Responsive code for github Page Section-----------> */
+
+@media screen and (max-width:720px) and (min-width:200px) {
+    #github>h1 {
         font-size: 1.5rem;
     }
 }
 
+/*<------------contect Page Section Styling Start-----------> */
+
+#Contact>h1 {
+    margin: 2rem 0rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+#Contact>div {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    color: #0b0b0b;
+margin-bottom: 30px;
+}
+
+#Contact>div>div {
+    width: 20%;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#Contact>div>div>a {
+    text-decoration: none;
+    color: black;
+    padding: 6px;
+    text-align: center;
+
+}
+
+#Contact>div>div:hover{
+    background-color: rgba(255, 0, 0, 0.602);
+    border: solid 2px black;
+    border-radius: 12px;
+}
+
+
+#Contact>div>div>a>div>img {
+    width: 50%;
+}
+
+/*<------------responsive code for contaict Page Section-----------> */
+@media screen and (max-width:720px){
+    #Contact>h1 {
+        margin: 2rem 0rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+    #Contact>div {
+        width: 70%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        color: #0b0b0b;
+    margin-bottom: 30px;
+    }
+    #Contact>div>div {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    #Contact>div>div>a>div>img {
+        width: 30%;
+    }
+}
+
+
+/*<------------footer Page Section Styling Start-----------> */
 
 footer {
     background: black;
