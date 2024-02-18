@@ -142,21 +142,7 @@ body {
 }
 
 @media only screen and (max-width:600px) and (min-width:200px) {
-    /* .dekstop-navbar-btn {
-        display: none;
-    }
-
-    .mobile-navbar-btn {
-        display: block;
-        z-index: 999;
-        text-align: end;
-        padding-right: 40px;
-    }
-
-    #naivbar h1 {
-        font-size: 20px;
-        margin: 10px;
-    } */
+    
     .showhide{
         display: none;
     } 
@@ -178,6 +164,7 @@ body {
         z-index: 999;
         text-align: end;
         padding-right: 40px;
+        font-size:17px ;
     }
 
     #naivbar h1 {
@@ -198,7 +185,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding-bottom: 70px;
+    padding-bottom: 160px;
     height: auto;
     background-size: max(1200px, 100vw);
     transition: all .5s;

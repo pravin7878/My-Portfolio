@@ -1,57 +1,39 @@
 var menuDiv = document.querySelector('.dekstop-navbar-btn')
-var menuDivbtn = document.querySelectorAll('.dekstop-navbar-btn>a')
-console.log(menuDivbtn)
+let mobileMenutogal = document.querySelector(".mobile-navbar-btn")
+
 let OpenMenuBtn = document.getElementById('open-menu')
 
 let btnIcon = document.querySelector('.btnicon')
 
+
 const BtnImg = {
-  openmenu: "./Image/icons8-menu-50 (1).png",
-  closemenu: "./Image/icons8-close-window-50.png"
+  closemenu:"http://127.0.0.1:5500/Image/icons8-close-window-50.png",
+  openmenu:"http://127.0.0.1:5500/Image/icons8-menu-50%20(1).png"
 }
 
-// menuDivbtn.addEventListener('click',()=>{
-//       menuDiv.style.display="none"
-//     })
-
-  // menuDiv.forEach((btn=>{
-  //   btn.addEventListener('click',()=>{
-  //     menuDiv.style.display="none"
-  //   })
-  
-  // }))
+var w = document.documentElement.clientWidth || window.innerWidth;
 
 
-// const creatMobilemenu = () => {
-//   let output = ``
-//   output += `
-// <a href="#Home">Home</a>
-// <a href="#About">About</a>
-// <a href="#Skills">Skills</a>
-// <a href="#Projects">Projects</a>
-// <a href="#Contact">Contact Us</a>
-// <a href="">Resume</a>
-// `
-//   menuDiv.innerHTML = output
-
-// }
-
-
+const hendelclick = ()=>{
+  console.log("btn is cliked");
+  if(w<=600){
+    OpenMenuBtn.innerHTML = `<img src="./Image/icons8-menu-50 (1).png" alt="open-menu" class= "open-menu-btn" >`
+    OpenMenuBtn.classList.toggle('active')
+menuDiv.classList.toggle('showhide')
+menuDiv.style.display="none"
+  }
+}
+   
 
 OpenMenuBtn.addEventListener('click', () => {
   if (OpenMenuBtn.className == "active") {
     OpenMenuBtn.innerHTML = `<img src='${BtnImg.closemenu}' alt=""  class= "close-menu-btn">`
     OpenMenuBtn.classList.toggle('active')
-    // menuDiv.classList.toggle('mobile-menu-div')
-    // creatMobilemenu()
-// menuDiv.classList.toggle('showhide')
 menuDiv.style.display="flex"
   }
   else {
     OpenMenuBtn.innerHTML = `<img src="./Image/icons8-menu-50 (1).png" alt="open-menu" class= "open-menu-btn" >`
     OpenMenuBtn.classList.toggle('active')
-    // menuDiv.innerHTML = '';
-    // menuDiv.classList.toggle('mobile-menu-div')
 menuDiv.classList.toggle('showhide')
 menuDiv.style.display="none"
   }
