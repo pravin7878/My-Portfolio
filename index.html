@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./portfolio.css">
+<link rel="stylesheet" href="./Dynamic-text.css">
 
 <body>
     <!------------Header Section Start----------->
@@ -25,8 +26,8 @@
             <a href="#Skills" onclick="hendelclick()">Skills</a>
             <a href="#Project" onclick="hendelclick()">Projects</a>
             <a href="#Contact" onclick="hendelclick()">Contact</a>
-            <a id="resumebtn" href="./resume/PRAVIN-KUMAR-RESUME.pdf" download="PRAVIN-KUMAR-RESUME"
-                target="_blank" onclick="hendelclick()">Resume</a>
+            <a id="resumebtn" href="./resume/PRAVIN-KUMAR-RESUME.pdf" download="PRAVIN-KUMAR-RESUME" target="_blank"
+                onclick="hendelclick()">Resume</a>
 
         </div>
         <div class="mobile-navbar-btn inactive">
@@ -34,7 +35,7 @@
                     class="open-menu-btn"></button>
         </div>
     </header>
-    <!-- <div id="menu"></div> -->
+
 
     <!------------Home Section Start----------->
     <section id="Home">
@@ -42,10 +43,22 @@
         <div>
             <h4>Hi 👋 my name is</h4>
             <h1>Pravin Kumar</h1>
-            <h4>And I'm a <span>Frontend Devloper</span></h4>
-            <!-- <button id="resumebtn"  target="_blank">Resume</button> -->
-            <a id="resumebtn" href="./resume/PRAVIN-KUMAR-RESUME.pdf" download="PRAVIN-KUMAR-RESUME"
-                target="_blank">Resume</a>
+            <div class="Dynamic-text">
+                <div class="main">
+                    <div class="text">I'm a</div>
+                    <ul class="option">
+                        <li><span>Frontend Developer.</span></li>
+                        <li><span>Web Designer.</span></li>
+                        <li><span>Frontend Developer.</span></li>
+                        <li><span>web Designer.</span></li>
+                    </ul>
+                </div>
+            </div>
+        
+            
+        
+        <a id="resumebtn" href="./resume/PRAVIN-KUMAR-RESUME.pdf" download="PRAVIN-KUMAR-RESUME"
+            target="_blank">Resume</a>
         </div>
     </section>
 
@@ -200,19 +213,25 @@
         <h1>Contact Details</h1>
         <div>
             <div>
-                <a href="https://www.linkedin.com/in/pravin-kumar-86b8a6246" target="_blank"
-                    rel="noopener noreferrer"><div><img src="./Image/linkedin.png" alt="linkedin"></div>Connect On Linkedin</a>
+                <a href="https://www.linkedin.com/in/pravin-kumar-86b8a6246" target="_blank" rel="noopener noreferrer">
+                    <div><img src="./Image/linkedin.png" alt="linkedin"></div>Connect On Linkedin
+                </a>
             </div>
             <div>
-                <a href="https://github.com/pravin7878" target="_blank" rel="noopener noreferrer"><div><img
-                        src="./Image/github.png" alt="github"></div>Connect On GitHub</a>
+                <a href="https://github.com/pravin7878" target="_blank" rel="noopener noreferrer">
+                    <div><img src="./Image/github.png" alt="github"></div>Connect On GitHub
+                </a>
             </div>
             <div>
 
-                <a href="mailto:pravinmimrot648@gmail.com"><div><img src="./Image/Email.png" alt="email"></div>Connect On Email</a>
+                <a href="mailto:pravinmimrot648@gmail.com">
+                    <div><img src="./Image/Email.png" alt="email"></div>Connect On Email
+                </a>
             </div>
             <div>
-                <a href="tel:+917878357375"><div><img src="./Image/phone (2).png"></div>Make a Call</a>
+                <a href="tel:+917878357375">
+                    <div><img src="./Image/phone (2).png"></div>Make a Call
+                </a>
             </div>
         </div>
     </section>

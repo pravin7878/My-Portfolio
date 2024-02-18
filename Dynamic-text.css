@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.Dynamic-text {
+  font-size: 10px;
+  display: inline-block;
+}
+
+.main {
+  justify-content: center;
+  align-items: center;
+  background: #111111;
+  display: flex;
+  margin-left: 42px
+  
+}
+
+.main .text {
+  color: #fff;
+  font-size: 30px;
+  /* font-weight: 400; */
+
+}
+
+.main .option {
+  margin-left: 15px;
+  height: 100px;
+  line-height: 40px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.option li {
+  list-style: none;
+  color: #ffffff;
+  /* font-size: 10px; */
+  /* font-weight: 500; */
+
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -390px;
+  }
+}
+
+.option li span {
+  display: inline-block;
+  font-size: 30px;
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+
+.option li span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #111;
+  border-left: 2px solid #face30;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+
+  100% {
+    left: 0;
+  }
+}
