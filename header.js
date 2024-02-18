@@ -7,15 +7,13 @@ let btnIcon = document.querySelector('.btnicon')
 
 
 const BtnImg = {
-  closemenu:"http://127.0.0.1:5500/Image/icons8-close-window-50.png",
-  openmenu:"http://127.0.0.1:5500/Image/icons8-menu-50%20(1).png"
+  closemenu:"./Image/icons8-close-window-50.png"
 }
-
+console.log(BtnImg.closemenu);
 var w = document.documentElement.clientWidth || window.innerWidth;
 
 
 const hendelclick = ()=>{
-  console.log("btn is cliked");
   if(w<=600){
     OpenMenuBtn.innerHTML = `<img src="./Image/icons8-menu-50 (1).png" alt="open-menu" class= "open-menu-btn" >`
     OpenMenuBtn.classList.toggle('active')
