@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-Portfolio</title>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,23 +44,23 @@
         <div>
             <h4>Hi 👋 my name is</h4>
             <h1>Pravin Kumar</h1>
-            <div class="Dynamic-text">
-                <div class="main">
-                    <div class="text">I'm a</div>
-                    <ul class="option">
-                        <li><span>Frontend Developer.</span></li>
-                        <li><span>Web Designer.</span></li>
-                        <li><span>Frontend Developer.</span></li>
-                        <li><span>web Designer.</span></li>
-                    </ul>
-                </div>
+            <div class="moving-text">
+                <h4>And I'm a <span class="element"></span></h4>
             </div>
-        
             
-        
         <a id="resumebtn" href="./resume/PRAVIN-KUMAR-RESUME.pdf" download="PRAVIN-KUMAR-RESUME"
             target="_blank">Resume</a>
         </div>
+
+        <script>
+
+            var typed = new Typed('.element', {
+                strings: ["Frontend Developer.", "Web Designer.","Problem Solver."],
+                typeSpeed: 100,
+                backSpeed:100,
+                loop:true,
+              });
+        </script>
     </section>
 
     <!------------About Section Start----------->
