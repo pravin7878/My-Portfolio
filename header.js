@@ -125,7 +125,6 @@ let CreateprojectDiv = (data) => {
 
 let getdata = () => {
   project.forEach((data) => {
-    // console.log(data)
     CreateprojectDiv(data)
   })
 }
