@@ -68,7 +68,7 @@ let project = [
     description: "I developed reusable components for product listings, details, and cart pages, enhancing scalability. I implemented add-to-cart functionality with quantity controls to improve user interaction. By applying responsive design techniques, I ensured cross-browser compatibility and optimal performance. I conducted thorough testing and debugging, resulting in a stable and reliable web application. Additionally, I integrated frontend components with server-side APIs, ensuring smooth data flow and functionality.",
     techstack: "Tech Stack:- React | JavaScript | HTML5 | CSS3",
     github: "https://github.com/pravin7878/Reliancedigital-Clone-",
-    DeployLink: ""
+    DeployLink: "https://reliancedigital-clone.vercel.app"
   },
   // {
   //   Img: "./Image/netflix.png",
