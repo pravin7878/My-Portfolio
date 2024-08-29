@@ -44,7 +44,7 @@ resume.forEach((btn) => {
   btn.addEventListener('click', () => {
     {
       console.log("resume");
-      window.open('https://drive.google.com/file/d/1L3ltXuqM1okygfvTCbJZSuZSOlD7N8qh/view?usp=sharing', "_blank")
+      window.open('https://drive.google.com/file/d/1auUR7gs1xjjMSB4uZZTaf9NQkDE2oDZx/view?usp=sharing', "_blank")
     }
   })
 })
