@@ -628,7 +628,8 @@ h4 {
 
 #Project>div {
     display: flex;
-    width: 70%;
+    gap: 15px;
+    width: 85%;
     margin: auto;
     justify-content: space-around;
 
